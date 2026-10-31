@@ -1,98 +1,129 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Pokowin</title>
     <style>
+        :root {
+            --primary-color: #2e7d32;
+            --text-color: #333333;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
         }
         .container {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
         h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+            color: var(--primary-color);
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+            margin-top: 0;
+            font-size: 2.2rem;
         }
         h2 {
-            color: #2c3e50;
-            margin-top: 25px;
+            color: var(--primary-color);
+            margin-top: 30px;
+            font-size: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 8px;
         }
-        p, li {
-            font-size: 16px;
-            color: #555;
+        p, ul {
+            margin-bottom: 20px;
         }
         ul {
             padding-left: 20px;
         }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 4px;
+            margin: 25px 0;
+        }
+        .highlight-box strong {
+            color: #1b5e20;
+        }
         .footer {
-            margin-top: 30px;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.9rem;
+            color: #666666;
             text-align: center;
-            font-size: 14px;
-            color: #888;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>गोपनीयता नीति (Privacy Policy) - Pokowin</h1>
-    <p><strong>प्रभावी तिथि:</strong> 14 अक्टूबर, 2026</p>
+    <h1>Privacy Policy</h1>
+    <p><strong>Last Updated:</strong> October 31, 2026</p>
+    
+    <p>Welcome to <strong>Pokowin</strong> ("we," "our," or "us"). We operate as a Walk & Earn application under the package name <strong>com.poko.pokowin</strong>. Your privacy is of paramount importance to us. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+    
+    <p>By installing and using Pokowin, you agree to the collection and use of information in accordance with this policy.</p>
 
-    <p>Pokowin ("हम", "हमारा", या "ऐप") आपके डेटा और गोपनीयता की सुरक्षा के लिए प्रतिबद्ध है। यह गोपनीयता नीति बताती है कि जब आप हमारे मोबाइल एप्लिकेशन का उपयोग करते हैं, जिसमें सर्वे (Surveys), गेम्स (Games), और शॉपिंग (Shopping) की सुविधाएं शामिल हैं, तब हम आपकी जानकारी को कैसे एकत्र, उपयोग और सुरक्षित करते हैं।</p>
+    <h2>1. Information Collection and Permissions</h2>
+    <p>To provide our core service of tracking steps and rewarding user activity without required monetary investments, our application requests access to specific sensitive device features:</p>
+    
+    <div class="highlight-box">
+        <h3>Required Sensitive Permissions:</h3>
+        <ul>
+            <li><strong>Physical Activity / Activity Recognition (<code>ACTIVITY_RECOGNITION</code>):</strong> This permission is strictly required to detect and count your daily steps. We use this data solely to calculate your step rewards and coin generation inside the app.</li>
+            <li><strong>Location Data (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>):</strong> We access location data to accurately measure distance traveled, validate authentic movement patterns, and prevent fraudulent activity.</li>
+        </ul>
+    </div>
 
-    <h2>1. हम कौन सी जानकारी एकत्र करते हैं?</h2>
-    <p>आपके ऐप अनुभव को बेहतर बनाने के लिए हम निम्नलिखित प्रकार की जानकारी एकत्र कर सकते हैं:</p>
+    <h2>2. How We Use Your Data</h2>
+    <p>The information collected through device permissions is used exclusively for the following purposes:</p>
     <ul>
-        <li><strong>व्यक्तिगत जानकारी:</strong> जब आप ऐप में पंजीकरण करते हैं, तो हम आपका नाम, ईमेल आईडी, फोन नंबर और (यदि लागू हो) शॉपिंग डिलीवरी के लिए आपका पता एकत्र कर सकते हैं।</li>
-        <li><strong>सर्वे डेटा:</strong> जब आप ऐप के भीतर किसी सर्वे में भाग लेते हैं, तो आपके द्वारा दिए गए उत्तर और प्राथमिकताएं एकत्र की जाती हैं।</li>
-        <li><strong>डिवाइस और उपयोग की जानकारी:</strong> आपके डिवाइस का मॉडल, ऑपरेटिंग सिस्टम का वर्जन, आईपी (IP) एड्रेस, और ऐप के भीतर आपकी गेमिंग या शॉपिंग एक्टिविटी की जानकारी।</li>
+        <li>To track your step count and convert physical steps into in-app virtual coins.</li>
+        <li>To maintain and improve the core performance, stability, and UI of the application.</li>
+        <li>To detect, prevent, and address technical issues or fraudulent activity (such as simulated walking or step-tampering).</li>
     </ul>
 
-    <h2>2. आपकी जानकारी का उपयोग कैसे किया जाता है?</h2>
-    <p>हम एकत्र की गई जानकारी का उपयोग निम्नलिखित उद्देश्यों के लिए करते हैं:</p>
+    <h2>3. Data Protection and Retention</h2>
+    <p>We implement robust security measures to guarantee your data is protected. Your physical activity and location data are processed directly on your device or transmitted securely using encrypted protocols (HTTPS/SSL). We do not rent, sell, or share your personal activity logs or location history with third-party advertising networks or external data brokers.</p>
+
+    <h2>4. Children's Privacy</h2>
+    <p>Our app does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.</p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Any updates become effective immediately upon being posted on this webpage.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions, compliance queries, or suggestions regarding this Privacy Policy, please feel free to reach out to us:</p>
     <ul>
-        <li>ऐप की सेवाएं (गेम्स, सर्वे और शॉपिंग ऑर्डर डिलीवरी) प्रदान करने और उन्हें प्रबंधित करने के लिए।</li>
-        <li>आपके शॉपिंग ऑर्डर्स को प्रोसेस करने और उन्हें आपके पते पर भेजने के लिए।</li>
-        <li>ऐप की सुरक्षा सुनिश्चित करने और किसी भी प्रकार की धोखाधड़ी को रोकने के लिए।</li>
-        <li>ऐप में विज्ञापन (Advertisements) दिखाने और उन्हें आपके अनुकूल बनाने के लिए।</li>
+        <li><strong>Email:</strong> support@pokowin.com</li>
     </ul>
-
-    <h2>3. विज्ञापन और थर्ड-पार्टी सेवाएं (Ads & Third-Party SDKs)</h2>
-    <p>हमारा ऐप मुफ़्त है और इसे संचालित रखने के लिए हम ऐप में विज्ञापन दिखाते हैं। इसके लिए हम थर्ड-पार्टी विज्ञापन नेटवर्क्स (जैसे AdMob, Unity Ads, AppLovin, या अन्य) का उपयोग कर सकते हैं। ये विज्ञापन नेटवर्क आपके डिवाइस के एडवरटाइजिंग आईडी (Advertising ID) का उपयोग आपको प्रासंगिक विज्ञापन दिखाने के लिए कर सकते हैं।</p>
-    <p>इसके अतिरिक्त, जब आप ऐप के माध्यम से शॉपिंग करते हैं, तो हम आपके डिलीवरी पते को केवल भरोसेमंद कूरियर/लॉजिस्टिक्स पार्टनर्स के साथ साझा करते हैं ताकि आपका सामान सुरक्षित पहुंच सके।</p>
-
-    <h2>4. डेटा सुरक्षा (Data Security)</h2>
-    <p>हम आपके व्यक्तिगत डेटा को अनधिकृत पहुंच, परिवर्तन या नष्ट होने से बचाने के लिए उचित और मानक सुरक्षा उपाय अपनाते हैं। हालांकि, इंटरनेट या इलेक्ट्रॉनिक स्टोरेज पर कोई भी ट्रांसमिशन 100% सुरक्षित नहीं होता है, इसलिए हम इसकी पूर्ण सुरक्षा की गारंटी नहीं दे सकते।</p>
-
-    <h2>5. बच्चों की गोपनीयता</h2>
-    <p>चूंकि हमारे ऐप में सर्वे, games और शॉपिंग फीचर्स शामिल हैं, इसलिए यह ऐप मुख्य रूप से 13 वर्ष से अधिक आयु के उपयोगकर्ताओं (या माता-पिता की सहमति वाले किशोरों) के लिए है। हम जानबूझकर 13 वर्ष से कम उम्र के बच्चों से कोई व्यक्तिगत जानकारी एकत्र नहीं करते हैं।</p>
-
-    <h2>6. आपकी गोपनीयता के अधिकार</h2>
-    <p>आप किसी भी समय अपने प्रोफाइल सेक्शन में जाकर अपनी जानकारी को अपडेट या बदल सकते हैं। यदि आप अपना अकाउंट और अपना डेटा पूरी तरह से डिलीट करना चाहते हैं, तो आप नीचे दिए गए ईमेल पर हमसे संपर्क कर सकते हैं।</p>
-
-    <h2>7. इस नीति में बदलाव</h2>
-    <p>हम समय-समय पर इस गोपनीयता नीति को अपडेट कर सकते हैं। किसी भी बदलाव की स्थिति में हम ऐप के माध्यम से या इस पेज पर नई तिथि अपडेट करके आपको सूचित करेंगे।</p>
-
-    <h2>8. हमसे संपर्क करें</h2>
-    <p>यदि इस गोपनीयता नीति या ऐप के संबंध में आपका कोई सवाल है, तो आप हमें यहाँ ईमेल कर सकते हैं:</p>
-    <p><strong>ईमेल:</strong> amitrky177@gmail.com</p>
 
     <div class="footer">
-        <p>&copy; 2026 Pokowin. सर्वाधिकार सुरक्षित।</p>
+        <p>&copy; 2026 Pokowin (com.poko.pokowin). All Rights Reserved.</p>
     </div>
 </div>
 
